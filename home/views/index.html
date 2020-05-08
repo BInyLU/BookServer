@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>图书管理系统</title>
+
+    <script type="text/template" id="indexTpl">
+        {{each list}}
+        <tr>
+            <td>{{$value.id}}</td>
+            <td>{{$value.name}}</td>
+            <td>{{$value.author}}</td>
+            <td>{{$value.category}}</td>
+            <td>{{$value.description}}</td>
+            <td><a href="javascript:;">修改</a>|<a href="javascript:;">删除</a></td>
+        </tr>
+        {{/each}}
+    </script>
+    <script type="text/template" id="weatherTpl">
+        <ul>
+            <li>城市：{{city}}</li>
+            <li>风向：{{WD}}</li>
+            <li>级别：{{WS}}</li>
+            <li>温度：{{temp}}</li>
+            <li>时间：{{time}}</li>
+        </ul>
+    </script>
+</head>
+<body>
+	<a href="1.html">1111111</a>
+  <div class="box"></div>
+	<div class="fromBox"></div>
+	<form class="login" id="login">
+		<h2>图书管理系统</h2>
+	    账号：<input type="text" name="user" class="user"><br>
+	    密码：<input type="password" name="psw" class="psw"><br>
+	    <input type="button" value="提交" class="loginBtn">
+	</form>
+    <link rel="stylesheet" type="text/css" href="/public/css/style.css">
+    <script type="text/javascript" src="/public/js/jquery.js"></script>
+    <script type="text/javascript" src="/public/js/template-web.js"></script>
+    <script type="text/javascript" src="/public/js/dialog.js"></script>
+    <script type="text/javascript" src="/public/js/index.js"></script>
+		<script type="text/javascript" src="/public/js/tip.js"></script>
+</body>
+</html>
